@@ -5,10 +5,25 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Counter Project</title>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>comming soon</h1>
+    <div class="container my-5">
+        <button id="addMe" class="btn-lg btn btn-info text-white">Start</button>
+        <button id="removeMe" class="btn-lg btn btn-danger text-white">Stop</button>
+        <!-- <button id="sound" class="btn-lg btn btn-warning text-white">sound</button> -->
+        <hr>
+        <h1 id="counter">0</h1>
+        <p id="alert"></p>
+    </div>
+    <audio id="audio1" src="./music/audio1.wav"></audio>
+    <audio id="audio2" src="./music/audio2.wav"></audio>
 
-    <script src="./app.js"></script>
+    <script src="app.js"></script>
+    <!-- JavaScript Bundle with Popper -->
+<!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script> -->
+    
 </body>
 </html>
