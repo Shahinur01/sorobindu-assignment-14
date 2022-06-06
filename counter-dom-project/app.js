@@ -10,6 +10,7 @@ let count=0;
 let resetCount='';
 
    add.onclick=() => {
+      clearInterval(resetCount);
     resetCount=setInterval(() =>{
            audio1.play();
            count++;
@@ -18,6 +19,6 @@ let resetCount='';
    }
    remove.onclick=() => {
       clearInterval(resetCount);
-      count=0;
+      // count=0;
       output.innerHTML=count;
    }

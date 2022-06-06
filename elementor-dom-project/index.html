@@ -5,10 +5,65 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Elementor Project</title>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    <h1>comming soon</h1>
+<body class="container my-5">
+    <div class="row">
+        <div class="col-md-3">
+            <div class="card">
+                <div class="card-header">
+                    Section Dynamic 
+                </div>
+                <div class="card-body">
+                    <div class="form-group my-2">
+                        <label for="">Heading</label>
+                        <input id="heading" class="form-control" type="text">
+                    </div>
+                    <div class="form-group my-2">
+                        <label for="">Text align</label> <br>
+                        <label>
+                            <input  name="align" id="left" class="align" type="radio" checked value="left">left
+                        </label>
+                        <label>
+                            <input name="align" id="right" class="align" type="radio" value="right">right
+                        </label>
+                        <label>
+                            <input name="align" id="center" class="align" type="radio" value="center">center
+                        </label>
+                    </div>
+                    <div class="form-group my-2">
+                        <label for="">Size</label>
+                        <input class="w-100 size" value="20" min="0" max="100" step="1px"  type="range">
+                    </div>
+                    <div class="form-group my-2">
+                        <label for="">Color</label>
+                        <input id="color" type="color" name="color">
+                    </div>
+                    <div class="form-group my-2">
+                        <label for="">Font family</label>
+                       <select class="form-control" name="" id="fontFamily">
+                           <option value="">Select</option>
+                           <option value="Permanent Marker">Permanent Marker</option>
+                           <option value="Poppins">Poppins</option>
+                           <option value="Red Hat Display">Red Hat Display</option>
+                           <option value="Great Vibes">Great Vibes</option>
+                       </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-8">
+            <section>
+                <h1></h1>
+            </section>
+        </div>
+    </div>
+    
 
-    <script src="./app.js"></script>
+    <script src="app.js"></script>
+<!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script> -->
 </body>
 </html>
